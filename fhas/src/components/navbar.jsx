@@ -48,8 +48,26 @@ const Navbar = () => {
             {/* Dropdown Menu */}
             {departmentsOpen && (
               <div className="absolute bg-white rounded-md shadow-lg mt-2 w-56 z-50" role="menu" aria-label="Departments menu">
+<<<<<<< Updated upstream
                 <Link href="/faculty/departments" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Medical Lab Sciences</Link>
                 <Link href="/faculty/departments/biomed/home" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Biomedical Engineering</Link>
+=======
+<<<<<<< Updated upstream
+                <Link href="/faculty/departments.html" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">All Departments</Link>
+                <Link href="/faculty/departments/civil-engineering.html" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Civil Engineering</Link>
+                <Link href="/faculty/departments/mechanical-engineering.html" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Mechanical Engineering</Link>
+                <Link href="/faculty/departments/electrical-electronics-engineering.html" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Electrical &amp; Electronics Engineering</Link>
+                <Link href="/faculty/departments/computer-engineering.html" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Computer Engineering</Link>
+                <Link href="/faculty/departments/chemical-engineering.html" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Chemical Engineering</Link>
+                <Link href="/faculty/departments/biomedical-engineering.html" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Biomedical Engineering</Link>
+=======
+                <Link href="/faculty/departments" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Medical Lab Sciences</Link>
+                <Link href="/departments/biomed/home" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Biomedical Engineering</Link>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
               </div>
             )}
           </div>
@@ -85,10 +103,29 @@ const Navbar = () => {
                 </svg>
               </button>
               {departmentsOpen && (
+<<<<<<< Updated upstream
                 <div className="absolute bg-white rounded-md shadow-lg mt-2 w-56 z-50" role="menu" aria-label="Departments menu">
                  <Link href="/faculty/departments" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Medical Lab Sciences</Link>
                  <Link href="/faculty/departments/biomed/home" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Biomedical Engineering</Link>
                </div>
+=======
+<<<<<<< Updated upstream
+                <div className="flex flex-col pl-4 border-l border-gray-300 mt-1 space-y-1">
+                  <Link href="/faculty/departments.html" className="block hover:text-indigo-600 transition py-1">All Departments</Link>
+                  <Link href="/faculty/departments/civil-engineering.html" className="block hover:text-indigo-600 transition py-1">Civil Engineering</Link>
+                  <Link href="/faculty/departments/mechanical-engineering.html" className="block hover:text-indigo-600 transition py-1">Mechanical Engineering</Link>
+                  <Link href="/faculty/departments/electrical-electronics-engineering.html" className="block hover:text-indigo-600 transition py-1">Electrical &amp; Electronics Engineering</Link>
+                  <Link href="/faculty/departments/computer-engineering.html" className="block hover:text-indigo-600 transition py-1">Computer Engineering</Link>
+                  <Link href="/faculty/departments/chemical-engineering.html" className="block hover:text-indigo-600 transition py-1">Chemical Engineering</Link>
+                  <Link href="/faculty/departments/biomedical-engineering.html" className="block hover:text-indigo-600 transition py-1">Biomedical Engineering</Link>
+                </div>
+=======
+                <div className="absolute bg-white rounded-md shadow-lg mt-2 w-56 z-50" role="menu" aria-label="Departments menu">
+                 <Link href="/faculty/departments" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Medical Lab Sciences</Link>
+                 <Link href="/departments/biomed/home" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Biomedical Engineering</Link>
+               </div>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
               )}
             </div>
 
