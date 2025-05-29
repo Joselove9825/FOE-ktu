@@ -5,7 +5,7 @@ export default function Facilities() {
   return (
     <div className="bg-gray-50 text-gray-800 font-sans">
       <Head>
-        <title>Facilities - Faculty of Engineering</title>
+        <title>Facilities - faculty of health and allied science</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
       </Head>
@@ -40,7 +40,7 @@ export default function Facilities() {
       </main>
 
       <footer className="bg-white border-t mt-20 py-6 text-center text-gray-600 text-sm">
-        &copy; 2024 Faculty of Engineering. All rights reserved.
+        &copy; 2025 faculty of health and allied science. All rights reserved.
       </footer>
     </div>
   );

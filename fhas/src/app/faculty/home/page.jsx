@@ -15,17 +15,19 @@ export default function Home() {
         <section id="home" className="space-y-12 scroll-mt-20">
           {/* Welcome from the Dean */}
           <article className="bg-white p-8 rounded-lg shadow-md">
-            <h1 className="text-4xl font-extrabold text-indigo-700 mb-4">Welcome from the Dean</h1>
+            <h1 className="text-4xl font-extrabold text-indigo-700 mb-4">Welcome Message from the Dean</h1>
             <p className="text-lg leading-relaxed max-w-4xl">
-              Welcome to the Faculty of Engineering.
+              Welcome to the Faculty of Health And Allied Science.
               <br />
-              It is a privilege to lead a faculty that is at the forefront of engineering education and research. Our mission is to produce graduates who are not only technically proficient but also equipped with the ethical, entrepreneurial, and leadership skills necessary to transform industries and communities.
-              In today’s rapidly changing world, engineering plays a pivotal role in addressing critical issues such as climate change, digital transformation, infrastructure development, and health technologies. Our faculty is deeply committed to innovation and excellence. Through rigorous academic training, hands-on experience, and collaboration with industry, we ensure our students are prepared for the challenges and opportunities ahead.
-              We invite you to explore our departments, programmes, research, and vibrant community. Whether you are a prospective student, partner, or researcher, we look forward to engaging with you in shaping a better future through engineering.
+              As Dean, I am honored to lead a faculty that is committed to transforming healthcare through education, research, and service. In today’s evolving health landscape, the demand for skilled and compassionate health professionals has never been greater. Our faculty stands ready to meet this demand by nurturing the next generation of nurses, public health practitioners, laboratory scientists, and other allied health professionals.
+
+Our programmes combine rigorous academic training with real-world clinical and community experiences. We emphasize interdisciplinary learning and collaborative research that directly contributes to improving health outcomes in our society.
+
+I invite you to explore our departments, engage with our faculty members, and join us in our mission to make a difference in healthcare. Together, we can build healthier communities and a healthier world.
               <br />
-              Prof. [Dean's Full Name]
+              Dr. Boakye Agyemang
               <br />
-              Dean, Faculty of Engineering
+              Dean, Faculty of Health And Allied Science
             </p>
           </article>
 
@@ -34,17 +36,14 @@ export default function Home() {
             <h2 className="text-3xl font-semibold text-indigo-600 mb-6">Featured Departments</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               <div className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-semibold mb-2">Civil Engineering</h3>
-                <p className="text-gray-600">Design and develop infrastructure projects shaping our cities and communities.</p>
+                <h3 className="text-xl font-semibold mb-2">Biomedical Engineering</h3>
+                <p className="text-gray-600">Bridging the gap between medicine and engineering, this department focuses on designing and developing medical devices, diagnostic tools, and healthcare technologies that improve patient care and advance clinical practices.</p>
               </div>
               <div className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
                 <h3 className="text-xl font-semibold mb-2">Medical Laboratory Science</h3>
-                <p className="text-gray-600">Innovating in power systems, electronics, and telecommunications.</p>
+                <p className="text-gray-600">At the forefront of disease diagnosis and medical research, this department equips students with skills in clinical testing, laboratory management, and biomedical investigations that are essential to effective healthcare delivery.</p>
               </div>
-              <div className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-semibold mb-2">Mechanical Engineering</h3>
-                <p className="text-gray-600">Advancing technology through robotics, thermodynamics, and design.</p>
-              </div>
+              
             </div>
           </section>
 
@@ -84,11 +83,9 @@ export default function Home() {
           <section>
             <h2 className="text-3xl font-semibold text-indigo-600 mb-6">Quick Links to Departments & Programmes</h2>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 max-w-4xl">
-              <a href="civil-engineering.html" className="block text-center bg-indigo-100 text-indigo-700 font-semibold rounded-lg py-3 px-4 hover:bg-indigo-200 transition">Civil Engineering</a>
+              
               <a href="medical-laboratory-science.html" className="block text-center bg-indigo-100 text-indigo-700 font-semibold rounded-lg py-3 px-4 hover:bg-indigo-200 transition">Medical Laboratory Science</a>
-              <a href="mechanical-engineering.html" className="block text-center bg-indigo-100 text-indigo-700 font-semibold rounded-lg py-3 px-4 hover:bg-indigo-200 transition">Mechanical Engineering</a>
-              <a href="computer-engineering.html" className="block text-center bg-indigo-100 text-indigo-700 font-semibold rounded-lg py-3 px-4 hover:bg-indigo-200 transition">Computer Engineering</a>
-              <a href="chemical-engineering.html" className="block text-center bg-indigo-100 text-indigo-700 font-semibold rounded-lg py-3 px-4 hover:bg-indigo-200 transition">Chemical Engineering</a>
+              
               <a href="biomedical-engineering.html" className="block text-center bg-indigo-100 text-indigo-700 font-semibold rounded-lg py-3 px-4 hover:bg-indigo-200 transition">Biomedical Engineering</a>
             </div>
           </section>
