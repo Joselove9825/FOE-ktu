@@ -7,7 +7,7 @@ const Navbar = () => {
   const [departmentsOpen, setDepartmentsOpen] = useState(false);
 
   const departmentLinks = [
-    { href: "/faculty/departments", label: "Medical Lab Sciences" },
+    { href: "/departments/mls/home", label: "Medical Lab Sciences" },
     { href: "/departments/biomed/home", label: "Biomedical Engineering" },
   ];
 
