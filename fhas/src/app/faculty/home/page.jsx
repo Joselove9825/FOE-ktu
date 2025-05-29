@@ -15,7 +15,7 @@ export default function Home() {
         <section id="home" className="space-y-12 scroll-mt-20">
           {/* Welcome from the Dean */}
           <article className="bg-white p-8 rounded-lg shadow-md">
-            <h1 className="text-4xl font-extrabold text-indigo-700 mb-4">Welcome from the Dean</h1>
+            <h1 className="text-4xl font-extrabold text-indigo-700 mb-4">Welcome Message from the Dean</h1>
             <p className="text-lg leading-relaxed max-w-4xl">
               Welcome to the Faculty of Health And Allied Science.
               <br />
