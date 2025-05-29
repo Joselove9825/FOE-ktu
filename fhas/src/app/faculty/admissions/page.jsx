@@ -5,7 +5,7 @@ export default function Admissions() {
   return (
     <div className="bg-gray-50 text-gray-800 font-sans">
       <Head>
-        <title>Admissions - Faculty of Engineering</title>
+        <title>Admissions - faculty of health and allied science</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
       </Head>
@@ -13,7 +13,7 @@ export default function Admissions() {
       <main className="container mx-auto p-6 space-y-16">
         <h1 className="text-4xl font-extrabold text-indigo-700 mb-6">Admissions</h1>
         <p className="text-lg leading-relaxed max-w-4xl mb-8">
-          Welcome to the admissions page of the Faculty of Engineering. Here you will find all the information you need to apply for our programmes.
+         Welcome to the Admissions Page of the Faculty of Health and Allied Sciences. Whether you are an aspiring health professional, researcher, or innovator, we’re excited that you’re considering joining our faculty. Here, you’ll find everything you need to know about applying to our diverse range of programmes, from undergraduate to postgraduate levels.
         </p>
 
         <section>
@@ -22,7 +22,7 @@ export default function Admissions() {
           <ul className="list-disc list-inside mb-6">
             <li>High school diploma or equivalent</li>
             <li>Minimum GPA of 3.0</li>
-            <li>Standardized test scores (SAT, ACT, etc.)</li>
+            <li>Standardized test scores </li>
           </ul>
           <p className="text-gray-700 mb-4">Specific requirements by programme level:</p>
           <ul className="list-disc list-inside mb-6">
@@ -58,7 +58,7 @@ export default function Admissions() {
         </section>
       </main>
       <footer className="bg-white border-t mt-20 py-6 text-center text-gray-600 text-sm">
-        &copy; 2024 Faculty of Engineering. All rights reserved.
+        &copy; 2025 faculty of health and allied science. All rights reserved.
       </footer>
     </div>
   );

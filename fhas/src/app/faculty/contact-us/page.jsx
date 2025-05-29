@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div className="bg-gray-50 text-gray-800 font-sans">
       <Head>
-        <title>Contact Us - Faculty of Engineering</title>
+        <title>Contact Us - faculty of health and allied science</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
       </Head>
@@ -31,8 +31,8 @@ export default function Contact() {
 
         <section className="bg-white p-8 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold text-indigo-600 mb-4">Phone & Email</h2>
-          <p className="text-gray-700 mb-2"><strong>Phone:</strong> (123) 456-7890</p>
-          <p className="text-gray-700 mb-2"><strong>Email:</strong> info@facultyengineering.edu</p>
+          <p className="text-gray-700 mb-2"><strong>Phone:</strong> (233) 0244590092</p>
+          <p className="text-gray-700 mb-2"><strong>Email:</strong> evelyn.owusu@ktu.edu.gh</p>
         </section>
 
         <section className="bg-white p-8 rounded-lg shadow-md">
@@ -56,7 +56,7 @@ export default function Contact() {
       </main>
 
       <footer className="bg-white border-t mt-20 py-6 text-center text-gray-600 text-sm">
-        &copy; 2024 Faculty of Engineering. All rights reserved.
+        &copy; 2025 faculty of health and allied science. All rights reserved.
       </footer>
     </div>
   );
