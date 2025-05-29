@@ -5,7 +5,7 @@ export const metadata ={
     description: "FHAS Faculty"
 }
 
-export default function RootLayout({children}){
+export default function FacultyLayout({children}){
    return(
      <div lang="en">
         <div>
