@@ -1,10 +1,15 @@
-"use client"
+"use client";
 import { useState } from 'react';
 import Link from 'next/link';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [departmentsOpen, setDepartmentsOpen] = useState(false);
+
+  const departmentLinks = [
+    { href: "/departments/mls/home", label: "Medical Lab Sciences" },
+    { href: "/departments/biomed/home", label: "Biomedical Engineering" },
+  ];
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
@@ -26,7 +31,7 @@ const Navbar = () => {
           </svg>
         </button>
 
-        {/* Navigation */}
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6 text-gray-700 font-medium items-center">
           <Link href="/faculty/home" className="hover:text-indigo-600 transition">Home</Link>
 
@@ -45,29 +50,13 @@ const Navbar = () => {
               </svg>
             </button>
 
-            {/* Dropdown Menu */}
             {departmentsOpen && (
               <div className="absolute bg-white rounded-md shadow-lg mt-2 w-56 z-50" role="menu" aria-label="Departments menu">
-<<<<<<< Updated upstream
-                <Link href="/faculty/departments" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Medical Lab Sciences</Link>
-                <Link href="/faculty/departments/biomed/home" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Biomedical Engineering</Link>
-=======
-<<<<<<< Updated upstream
-                <Link href="/faculty/departments.html" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">All Departments</Link>
-                <Link href="/faculty/departments/civil-engineering.html" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Civil Engineering</Link>
-                <Link href="/faculty/departments/mechanical-engineering.html" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Mechanical Engineering</Link>
-                <Link href="/faculty/departments/electrical-electronics-engineering.html" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Electrical &amp; Electronics Engineering</Link>
-                <Link href="/faculty/departments/computer-engineering.html" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Computer Engineering</Link>
-                <Link href="/faculty/departments/chemical-engineering.html" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Chemical Engineering</Link>
-                <Link href="/faculty/departments/biomedical-engineering.html" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Biomedical Engineering</Link>
-=======
-                <Link href="/faculty/departments" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Medical Lab Sciences</Link>
-                <Link href="/departments/biomed/home" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Biomedical Engineering</Link>
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+                {departmentLinks.map((link, index) => (
+                  <Link key={index} href={link.href} className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">
+                    {link.label}
+                  </Link>
+                ))}
               </div>
             )}
           </div>
@@ -85,13 +74,12 @@ const Navbar = () => {
         </nav>
       </div>
 
-      {/* Mobile Navigation Menu */}
+      {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <nav id="mobile-menu" className="md:hidden bg-white border-t border-gray-200 shadow-lg">
           <div className="flex flex-col space-y-1 py-4 px-6 text-gray-700 font-medium">
             <Link href="/faculty/home" className="block hover:text-indigo-600 transition py-2">Home</Link>
 
-            {/* Mobile departments dropdown */}
             <div>
               <button
                 onClick={() => setDepartmentsOpen(!departmentsOpen)}
@@ -103,29 +91,13 @@ const Navbar = () => {
                 </svg>
               </button>
               {departmentsOpen && (
-<<<<<<< Updated upstream
-                <div className="absolute bg-white rounded-md shadow-lg mt-2 w-56 z-50" role="menu" aria-label="Departments menu">
-                 <Link href="/faculty/departments" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Medical Lab Sciences</Link>
-                 <Link href="/faculty/departments/biomed/home" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Biomedical Engineering</Link>
-               </div>
-=======
-<<<<<<< Updated upstream
                 <div className="flex flex-col pl-4 border-l border-gray-300 mt-1 space-y-1">
-                  <Link href="/faculty/departments.html" className="block hover:text-indigo-600 transition py-1">All Departments</Link>
-                  <Link href="/faculty/departments/civil-engineering.html" className="block hover:text-indigo-600 transition py-1">Civil Engineering</Link>
-                  <Link href="/faculty/departments/mechanical-engineering.html" className="block hover:text-indigo-600 transition py-1">Mechanical Engineering</Link>
-                  <Link href="/faculty/departments/electrical-electronics-engineering.html" className="block hover:text-indigo-600 transition py-1">Electrical &amp; Electronics Engineering</Link>
-                  <Link href="/faculty/departments/computer-engineering.html" className="block hover:text-indigo-600 transition py-1">Computer Engineering</Link>
-                  <Link href="/faculty/departments/chemical-engineering.html" className="block hover:text-indigo-600 transition py-1">Chemical Engineering</Link>
-                  <Link href="/faculty/departments/biomedical-engineering.html" className="block hover:text-indigo-600 transition py-1">Biomedical Engineering</Link>
+                  {departmentLinks.map((link, index) => (
+                    <Link key={index} href={link.href} className="block hover:text-indigo-600 transition py-1">
+                      {link.label}
+                    </Link>
+                  ))}
                 </div>
-=======
-                <div className="absolute bg-white rounded-md shadow-lg mt-2 w-56 z-50" role="menu" aria-label="Departments menu">
-                 <Link href="/faculty/departments" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Medical Lab Sciences</Link>
-                 <Link href="/departments/biomed/home" className="block px-4 py-2 text-gray-800 hover:bg-indigo-100" role="menuitem">Biomedical Engineering</Link>
-               </div>
->>>>>>> Stashed changes
->>>>>>> Stashed changes
               )}
             </div>
 
